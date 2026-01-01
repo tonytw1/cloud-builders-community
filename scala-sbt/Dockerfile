@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=eclipse-temurin:22
+ARG BASE_IMAGE=eclipse-temurin:25
 FROM ${BASE_IMAGE}
 
 ARG SBT_VERSION=1.10.1

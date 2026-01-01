@@ -5,10 +5,10 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - 'build'
-  - '--build-arg=BASE_IMAGE=eclipse-temurin:22'
+  - '--build-arg=BASE_IMAGE=eclipse-temurin:25'
   - '--build-arg=SBT_VERSION=1.10.1'
   - '--build-arg=SHA=5647898e972313ad6abcbc8df8ad54974a49f8f5020dfd9b7cc89f4821047a5b'
-  - '--tag=gcr.io/$PROJECT_ID/scala-sbt:1.10.1-jdk-22'
+  - '--tag=gcr.io/$PROJECT_ID/scala-sbt:1.10.1-jdk-25'
   - '.'
   waitFor: ['-']
 
@@ -16,10 +16,10 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - 'tag'
-  - 'gcr.io/$PROJECT_ID/scala-sbt:1.10.1-jdk-22'
+  - 'gcr.io/$PROJECT_ID/scala-sbt:1.10.1-jdk-25'
   - 'gcr.io/$PROJECT_ID/scala-sbt'
 
 images:
 - 'gcr.io/$PROJECT_ID/scala-sbt'
-- 'gcr.io/$PROJECT_ID/scala-sbt:1.10.1-jdk-22'
+- 'gcr.io/$PROJECT_ID/scala-sbt:1.10.1-jdk-25'
 tags: ['cloud-builders-community']
