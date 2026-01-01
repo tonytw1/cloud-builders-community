@@ -1,7 +1,7 @@
 ARG BASE_IMAGE=eclipse-temurin:25
 FROM ${BASE_IMAGE}
 
-ARG SBT_VERSION=1.10.1
+ARG SBT_VERSION=1.11.7
 ARG SHA=5647898e972313ad6abcbc8df8ad54974a49f8f5020dfd9b7cc89f4821047a5b
 ARG BASE_URL=https://github.com/sbt/sbt/releases/download
 
